@@ -55,6 +55,7 @@ Formato:
     python client.py <IP_servidor> <porta> <nome_do_arquivo> <pacotes_a_descartar>
 
 Exemplo (descartando os pacotes 10, 25 e 50):
+
     python client.py 127.0.0.1 65432 arquivo_grande.txt 10,25,50
 
 
