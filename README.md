@@ -16,12 +16,12 @@ Requisitos
 - Python 3.x
 
 
-# 1. Preparação do Ambiente
+## 1. Preparação do Ambiente
 
 Todos os arquivos que você deseja transferir devem estar localizados dentro de um diretório chamado "test_files".
 
 
-# 2. Execução do Servidor e Cliente
+## 2. Execução do Servidor e Cliente
 
 Você precisará de dois terminais abertos simultaneamente: um para o servidor e outro para o cliente.
 
@@ -40,22 +40,25 @@ Abra um novo terminal (mantenha o terminal do servidor em execução) e utilize 
 Para solicitar um arquivo que está na pasta "test_files" do servidor.
 
 Formato:
+
     python client.py <IP_servidor> <porta> <nome_do_arquivo>
 
 Exemplo:
+
     python client.py 127.0.0.1 65432 arquivo.txt
 
 
 Testando com Simulação de Perda de Pacotes
 
 Formato:
+
     python client.py <IP_servidor> <porta> <nome_do_arquivo> <pacotes_a_descartar>
 
 Exemplo (descartando os pacotes 10, 25 e 50):
     python client.py 127.0.0.1 65432 arquivo_grande.txt 10,25,50
 
 
-# 3. Verificação
+## 3. Verificação
 
 Após a transferência ser concluída com sucesso, um novo arquivo chamado "received_[nome_do_arquivo_original]" será criado no diretório principal do projeto.
 
